@@ -1,9 +1,9 @@
 <?php include 'includes/header.php'; ?>
 
 <form>
-  <textarea class="yazi_alani" placeholder="Bir şeyler yaz"></textarea>
+  <textarea class="yazi_alani" placeholder="Bir şeyler yaz" id="yazi_alani"></textarea>
 
-  <input type="submit" class="yazi_butonu" value="Paylaş">
+  <input type="submit" class="yazi_butonu" value="Paylaş" id="paylas_butonu">
   <div class="clear"></div>
 
   <input type="file">

@@ -5,9 +5,14 @@
     <title>Post IT</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/jquery-3.1.1.min.js"></script>
+    <script src="scripts/script.js"></script>
+
   </head>
 
   <body>
+
+
 
     <div id="menu">
       <ul class="ic_menu site_genisligi">

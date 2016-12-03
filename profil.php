@@ -1,9 +1,12 @@
 <?php include 'includes/header.php'; ?>
 
 
+
 <div class="profil_bolumu">
 
-  <img src="images/uyeler/sincap.jpg">
+  <a href="images/uyeler/sincap.jpg" id="profil_resmi">
+    <img src="images/uyeler/sincap.jpg">
+  </a>
 
 
   <div class="profil_bilgisi">
@@ -25,5 +28,8 @@
   <div class="clear"></div>
 
 </div>
+
+
+<div class="karanlik"><img src="images/uyeler/sincap.jpg"></div>
 
 <?php include 'includes/footer.php'; ?>
