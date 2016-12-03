@@ -1,7 +1,12 @@
 <?php include 'includes/header.php'; ?>
 
 <form>
-  <textarea></textarea>
+  <textarea class="yazi_alani" placeholder="Bir şeyler yaz"></textarea>
+
+  <input type="submit" class="yazi_butonu" value="Paylaş">
+  <div class="clear"></div>
+
+  <input type="file">
 </form>
 
 
@@ -14,5 +19,4 @@
   <div class="clear"></div>
 
 </div>
-
 <?php include 'includes/footer.php'; ?>
