@@ -14,22 +14,7 @@
 
 </form>
 
-<?php
-
-if ($_POST) {
-
-$veri = array(post('kullanici_adi'), post('mail'), post('sifre'));
-
-if (!in_array("", $veri)) {
-  global $db;
-  $query = $db->prepare("INSERT INTO uyeler SET
-    Kullanici_Adi = ?, Mail = ?, Sifre = ?");
-    $query->execute($veri);
-
-  }
-}
-
-?>
+<?php uye_kaydi(); ?>
 
 
 
