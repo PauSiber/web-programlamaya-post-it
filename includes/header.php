@@ -1,4 +1,8 @@
-<?php include "baglan.php"; $db = baglanti(); ?>
+<?php
+include "baglan.php";
+include "functions.php";
+$db = baglanti();
+?>
 
 <html>
 
