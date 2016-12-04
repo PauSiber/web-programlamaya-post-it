@@ -1,6 +1,17 @@
 <?php include 'includes/header.php'; ?>
 
+<?php $username = $_GET['uye'];
 
+global $db;
+$query = $db->prepare("SELECT * FROM uyeler WHERE Kullanici_Adi = ?");
+$query->execute(array($username));
+$row = $query->fetch();
+$id = $row['Kullanici_ID'];
+$ad = $row['Kullanici_Adi'];
+
+echo $id;
+
+?>
 
 <div class="profil_bolumu">
 
@@ -10,7 +21,7 @@
 
 
   <div class="profil_bilgisi">
-    <h1>Sincap</h1>
+    <h1><?php echo $ad; ?></h1>
     <p>Buraya hakkında falan filan gelecek bgiibalşskfşldsfk</p>
   </div>
 
@@ -21,8 +32,15 @@
 <h2>Paylaşımları (10)</h2>
 <div class="posts">
 
-  <?php for ($i = 1; $i <= 10; $i++) { ?>
-  <div class="post">MERHABA PAÜSİBER BURASI PROFİL</div>
+
+  <?php
+  global $db;
+  $query = $db->prepare("SELECT * FROM postlar WHERE Post_Sahibi = ? ORDER BY Post_ID DESC");
+  $query->execute(array($id));
+
+  while($cek = $query->fetch()) { ?>
+  <div class="post"><?php echo $cek['Post']; ?></div>
+
   <?php } ?>
 
   <div class="clear"></div>

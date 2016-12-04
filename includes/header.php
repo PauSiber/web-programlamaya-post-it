@@ -20,6 +20,7 @@ $db = baglanti();
 
 
 
+
     <div id="menu">
       <ul class="ic_menu site_genisligi">
           <!-- ul = unordered list | ol = ordered list -->
@@ -37,6 +38,7 @@ $db = baglanti();
 
 
 
+        <?php if (!oturum_acildi_mi()) { ?>
         <li>
           <a href="uyeol.php">Üye Ol</a>
         </li> <!-- list item -->
@@ -45,10 +47,13 @@ $db = baglanti();
           <a href="giris.php">Giriş Yap</a>
         </li> <!-- list item -->
 
+
+        <?php } else { ?>
+
         <li>
           <a href="cikis.php">Çıkış</a>
         </li> <!-- list item -->
-
+        <?php } ?>
 
       </ul>
     </div>
