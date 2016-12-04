@@ -5,8 +5,7 @@
 
   <input type="submit" class="yazi_butonu" value="Paylaş" id="paylas_butonu">
   <div class="clear"></div>
-
-  <input type="file">
+  
 </form>
 
 
