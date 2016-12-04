@@ -1,3 +1,5 @@
+<?php include "baglan.php"; $db = baglanti(); ?>
+
 <html>
 
 
